@@ -48,6 +48,6 @@ jobs:
           title: "Design tokens updated"
           body: "Design tokens have been updated via Figma and need to be reviewed."
         env:
-          GITHUB_TOKEN: ${{ secrets.actions }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # this parameter is optional and defaults to master but I am using main
           BRANCH_NAME: 'main'
